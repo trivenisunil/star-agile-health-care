@@ -12,5 +12,11 @@ steps{
 sh 'mvn compile'
 }
 }
+
+stage('Code Testing'){
+steps{
+sh 'mvn test'
+}
+}
     }
 }
