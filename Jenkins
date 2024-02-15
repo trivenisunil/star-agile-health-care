@@ -1,0 +1,14 @@
+pipeline{
+    agent any
+    stages{
+        stage('Checkout the code from github'){
+            steps{
+                 git 'https://github.com/trivenisunil/star-agile-health-care/'
+                
+            }
+        }
+stage('Code compile'){
+sh 'mvn compile'
+}
+    }
+}
